@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/color_picker"
+        android:enabled="true"
+        android:icon="@drawable/ic_color_picker"
+        android:title="Color"
+
+        />
+
+    <item
+        android:id="@+id/pencil"
+        android:enabled="true"
+        android:icon="@drawable/ic_brush_for_paint_bottom"
+        android:title="Pencil"/>
+    <item
+        android:id="@+id/eraser"
+        android:enabled="true"
+        android:icon="@drawable/ic_eraser_for_paint_bottom"
+        android:title="Eraser"/>
+
+
+
+</menu>

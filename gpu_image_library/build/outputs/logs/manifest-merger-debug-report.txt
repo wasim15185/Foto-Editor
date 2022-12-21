@@ -1,0 +1,25 @@
+-- Merging decision tree log ---
+manifest
+ADDED from E:\App Building\PhotoEditor\gpu_image_library\src\main\AndroidManifest.xml:2:1-57
+INJECTED from E:\App Building\PhotoEditor\gpu_image_library\src\main\AndroidManifest.xml:2:1-57
+INJECTED from E:\App Building\PhotoEditor\gpu_image_library\src\main\AndroidManifest.xml:2:1-57
+	package
+		ADDED from E:\App Building\PhotoEditor\gpu_image_library\src\main\AndroidManifest.xml:2:11-54
+		INJECTED from E:\App Building\PhotoEditor\gpu_image_library\src\main\AndroidManifest.xml
+		INJECTED from E:\App Building\PhotoEditor\gpu_image_library\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from E:\App Building\PhotoEditor\gpu_image_library\src\main\AndroidManifest.xml:2:1-57
+uses-sdk
+INJECTED from E:\App Building\PhotoEditor\gpu_image_library\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from E:\App Building\PhotoEditor\gpu_image_library\src\main\AndroidManifest.xml
+INJECTED from E:\App Building\PhotoEditor\gpu_image_library\src\main\AndroidManifest.xml
+INJECTED from E:\App Building\PhotoEditor\gpu_image_library\src\main\AndroidManifest.xml
+INJECTED from E:\App Building\PhotoEditor\gpu_image_library\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from E:\App Building\PhotoEditor\gpu_image_library\src\main\AndroidManifest.xml
+		ADDED from E:\App Building\PhotoEditor\gpu_image_library\src\main\AndroidManifest.xml
+		INJECTED from E:\App Building\PhotoEditor\gpu_image_library\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from E:\App Building\PhotoEditor\gpu_image_library\src\main\AndroidManifest.xml
+		ADDED from E:\App Building\PhotoEditor\gpu_image_library\src\main\AndroidManifest.xml
+		INJECTED from E:\App Building\PhotoEditor\gpu_image_library\src\main\AndroidManifest.xml

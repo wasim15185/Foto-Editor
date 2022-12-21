@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/brightnessId"
+        android:enabled="true"
+        android:icon="@drawable/ic_brightness"
+        android:title="Brightness" />
+
+
+
+    <item
+        android:id="@+id/contrastId"
+        android:enabled="true"
+        android:icon="@drawable/ic_contrast"
+        android:title="Contrast" />
+
+
+    <item
+        android:id="@+id/saturationId"
+        android:enabled="true"
+        android:icon="@drawable/ic_saturation"
+        android:title="Saturation" />
+
+    <item
+        android:id="@+id/sharpenId"
+        android:enabled="true"
+        android:icon="@drawable/ic_sharpen"
+        android:title="Sharpen" />
+
+
+    <item
+        android:id="@+id/vignetteId"
+        android:enabled="true"
+        android:icon="@drawable/ic_outline_vignette_24"
+        android:title="@string/Vignette" />
+
+</menu>

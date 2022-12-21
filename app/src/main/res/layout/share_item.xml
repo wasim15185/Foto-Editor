@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="clickListener"
+            type="com.android.demoeditor.recyclerViews.ShareItemListener" />
+        <variable
+            name="shareItemData"
+            type="com.android.demoeditor.data.ShareItemData" />
+
+        <variable
+            name="position"
+            type="Integer" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_margin="4dp"
+        android:onClick="@{()->clickListener.onClick(shareItemData)}"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/circular_img_view"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@{shareItemData.drawable}"
+            app:layout_constraintBottom_toTopOf="@+id/share_text_item_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@drawable/instagram" />
+
+        <TextView
+            android:id="@+id/share_text_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="@{shareItemData.name}"
+            android:textSize="11sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/circular_img_view"
+            app:layout_constraintStart_toStartOf="@+id/circular_img_view"
+            tools:text="Whatsapp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

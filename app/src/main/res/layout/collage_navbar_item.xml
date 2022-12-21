@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="clickListener"
+            type="com.android.demoeditor.recyclerViews.CollageNavbarItemListener" />
+
+        <variable
+            name="collageNavbarItemData"
+            type="com.android.demoeditor.data.LayoutSelectorRecyclerViewItemData" />
+
+        <variable
+            name="position"
+            type="Integer" />
+
+        <variable
+            name="layoutInfoData"
+            type="com.android.demoeditor.data.PuzzleData" />
+
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:padding="8dp"
+        android:onClick="@{()->clickListener.click(layoutInfoData,position)}"
+        >
+
+        <com.xiaopo.flying.puzzle.SquarePuzzleView
+            android:id="@+id/puzzleView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

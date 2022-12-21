@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/java/android/example/photoeditor/customView/CropView/croppylib/src/main/res/layout/activity_croppy.xml" value="0.1515625" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/java/android/example/photoeditor/customView/CropView/croppylib/src/main/res/layout/fragment_image_crop.xml" value="0.1515625" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/drawable-anydpi/background_color_active.xml" value="0.26461538461538464" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.26461538461538464" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/drawable-xxhdpi/ic_rotate_scale_white_17dp.xml" value="0.15729166666666666" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/drawable-xxhdpi/shape_transfarent_background.xml" value="0.15729166666666666" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/drawable/adjust_bottom_navbar_icon_style_for_active.xml" value="0.26461538461538464" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/drawable/background_of_text_sticker_item.xml" value="0.2518518518518518" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/drawable/background_of_text_sticker_item_dark.xml" value="0.2518518518518518" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/drawable/background_of_text_sticker_item_light.xml" value="0.19722222222222222" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/drawable/bottom_view_text_sticker_plus_btn.xml" value="0.2222222222222222" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/drawable/close_icon_sticker_view_18.xml" value="0.26461538461538464" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/drawable/collage_edit_btn_background.xml" value="0.15729166666666666" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/drawable/collage_edit_btn_drawable.xml" value="0.26461538461538464" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/drawable/collage_save_background.xml" value="0.15729166666666666" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/drawable/collage_selector_fab_background.xml" value="0.25925925925925924" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/drawable/cross_tick_button_style.xml" value="0.22685185185185186" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/drawable/custom_joined_edit_text_icon.xml" value="0.22685185185185186" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/drawable/edit_dialog_confirm_btn_style.xml" value="0.22685185185185186" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/drawable/edit_text_dialog_input_drawable.xml" value="0.22685185185185186" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/drawable/ic_adjust.xml" value="0.26461538461538464" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/drawable/ic_arrow_down_24.xml" value="0.15729166666666666" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/drawable/ic_arrow_up_24.xml" value="0.1546875" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/drawable/ic_back_arrow_24.xml" value="0.15729166666666666" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/drawable/ic_back_stack_arrow_24.xml" value="0.21388888888888888" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/drawable/ic_baseline_add_or_plus_24.xml" value="0.25555555555555554" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/drawable/ic_baseline_arrow_back_24.xml" value="0.26461538461538464" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/drawable/ic_baseline_chat_bubble_24.xml" value="0.26461538461538464" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/drawable/ic_baseline_check_24.xml" value="0.26461538461538464" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/drawable/ic_baseline_close_18.xml" value="0.26461538461538464" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/drawable/ic_baseline_close_24.xml" value="0.26461538461538464" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/drawable/ic_baseline_cross_24.xml" value="0.26461538461538464" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/drawable/ic_baseline_flip_24.xml" value="0.26461538461538464" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/drawable/ic_baseline_keyboard_24.xml" value="0.24814814814814815" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/drawable/ic_baseline_vignette_24.xml" value="0.26461538461538464" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/drawable/ic_brightness.xml" value="0.16770833333333332" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/drawable/ic_brush.xml" value="0.26461538461538464" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/drawable/ic_collage.xml" value="0.16770833333333332" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/drawable/ic_collage_border_icon_24.xml" value="0.26461538461538464" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/drawable/ic_collage_corner_icon_24.xml" value="0.26461538461538464" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/drawable/ic_collage_flip_horizontal.xml" value="0.26461538461538464" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/drawable/ic_collage_grid__icon_24.xml" value="0.26461538461538464" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/drawable/ic_crop.xml" value="0.16770833333333332" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/drawable/ic_demo_home_screen.xml" value="0.24444444444444444" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/drawable/ic_edit_collage_icon_24.xml" value="0.25925925925925924" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/drawable/ic_edit_text_icon.xml" value="0.22685185185185186" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/drawable/ic_edit_text_icon_fouced.xml" value="0.22685185185185186" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/drawable/ic_edit_text_icon_not_focused.xml" value="0.22685185185185186" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/drawable/ic_empty_recycler_icon.xml" value="0.26461538461538464" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/drawable/ic_filter.xml" value="0.26461538461538464" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/drawable/ic_foreground_xxxxxxxxxxx.xml" value="0.26461538461538464" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/drawable/ic_hamburger.xml" value="0.25555555555555554" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/drawable/ic_home.xml" value="0.25" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/drawable/ic_home_24.xml" value="0.26461538461538464" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/drawable/ic_home_adjust_icon.xml" value="0.26461538461538464" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/drawable/ic_home_filter_icon.xml" value="0.26461538461538464" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/drawable/ic_home_sticker_icon.xml" value="0.26461538461538464" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/drawable/ic_icon_original.xml" value="0.26461538461538464" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/drawable/ic_icon_rotate_right_90_degree.xml" value="0.26461538461538464" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/drawable/ic_ios_new_back_v2.xml" value="0.15729166666666666" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/drawable/ic_launcher_background.xml" value="0.16770833333333332" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/drawable/ic_launcher_background2.xml" value="0.26461538461538464" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.16770833333333332" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/drawable/ic_launcher_foreground2.xml" value="0.26461538461538464" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/drawable/ic_mirror_vertical_24.xml" value="0.26461538461538464" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/drawable/ic_outline_vignette_24.xml" value="0.26461538461538464" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/drawable/ic_re_edit_icon.xml" value="0.25555555555555554" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/drawable/ic_recent_24.xml" value="0.26461538461538464" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/drawable/ic_rotate_left.xml" value="0.26461538461538464" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/drawable/ic_save_icon_24.xml" value="0.15729166666666666" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/drawable/ic_single_image_icon.xml" value="0.225" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/drawable/ic_sticker.xml" value="0.26461538461538464" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/drawable/ic_text.xml" value="0.26296296296296295" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/drawable/indicator_background.xml" value="0.26875" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/drawable/keyboard_btn_background.xml" value="0.25555555555555554" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/drawable/only_for_circle_background_drawable.xml" value="0.16770833333333332" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/drawable/paint_tablayout_background.xml" value="0.26875" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/drawable/pencil_rubber_button_style.xml" value="0.26875" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/drawable/spinner_background.xml" value="0.16770833333333332" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/drawable/sticker_emoji_transparent_background.xml" value="0.15729166666666666" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/drawable/sticker_fragment_bottom_tab_item_style.xml" value="0.26461538461538464" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/drawable/sticker_item_background_light.xml" value="0.2518518518518518" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/drawable/sticker_transparent_background.xml" value="0.1609375" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/drawable/sticker_view_close_icon_12.xml" value="0.2490740740740741" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/drawable/sticker_view_close_icon_18.xml" value="0.26461538461538464" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/drawable/sticker_view_close_icon_18_2.xml" value="0.26296296296296295" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/drawable/sticker_view_done_icon_12.xml" value="0.26296296296296295" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/drawable/sticker_view_flip_icon_12.xml" value="0.23981481481481481" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/drawable/sticker_view_flip_icon_18.xml" value="0.26461538461538464" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/drawable/sticker_view_resize_12.xml" value="0.16770833333333332" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/drawable/sticker_view_resize_18.xml" value="0.26461538461538464" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/drawable/transparent_rect.xml" value="0.26461538461538464" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/font/roboto.xml" value="0.2518518518518518" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/layout/activity_img_selector.xml" value="0.2526041666666667" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/layout/activity_main.xml" value="0.20925925925925926" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/layout/adjust_bottom_navbar.xml" value="0.2361111111111111" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/layout/album_spinner_item.xml" value="0.24814814814814815" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/layout/banner_layout.xml" value="0.2526041666666667" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/layout/banner_layout_1.xml" value="0.2526041666666667" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/layout/bottom_view_text_sticker.xml" value="0.2526041666666667" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/layout/collage_color_picker_item.xml" value="0.13541666666666666" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/layout/collage_edit_screen_nav_item.xml" value="0.2526041666666667" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/layout/collage_navbar_item.xml" value="0.2526041666666667" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/layout/color_picker_item.xml" value="0.20925925925925926" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/layout/edit_text_dialog.xml" value="0.12" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/layout/editor_navigation_bar.xml" value="0.264" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/layout/filter_bottom_navbar.xml" value="0.2111111111111111" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/layout/filter_navbar_shimmer_effect.xml" value="0.2526041666666667" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/layout/filters_navbar_item.xml" value="0.16315472606863335" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/layout/font_recycler_view_item.xml" value="0.8" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/layout/fragment_.xml" value="0.2526041666666667" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/layout/fragment_about.xml" value="0.2526041666666667" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/layout/fragment_adjust.xml" value="0.2" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/layout/fragment_animal_view_pager.xml" value="0.14114583333333333" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/layout/fragment_blank_text_sticker.xml" value="0.2526041666666667" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/layout/fragment_collage_background_color_view_pager.xml" value="0.2526041666666667" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/layout/fragment_collage_edit_view_pager.xml" value="0.2526041666666667" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/layout/fragment_collage_layout.xml" value="0.2526041666666667" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/layout/fragment_collage_layout_view_pager.xml" value="0.2526041666666667" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/layout/fragment_collage_resize_view_pager.xml" value="0.2526041666666667" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/layout/fragment_collage_selector.xml" value="0.176" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/layout/fragment_color_view_pager.xml" value="0.2526041666666667" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/layout/fragment_crop.xml" value="0.14114583333333333" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/layout/fragment_edit_screen.xml" value="0.2526041666666667" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/layout/fragment_emoji_view_pager.xml" value="0.22037037037037038" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/layout/fragment_eraser_view_pager.xml" value="0.14114583333333333" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/layout/fragment_facial_view_pager.xml" value="0.2526041666666667" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/layout/fragment_filters.xml" value="0.21666666666666667" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/layout/fragment_first_page_of_home_viewpager.xml" value="0.1515625" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/layout/fragment_first_viewpager_of_home.xml" value="0.2" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/layout/fragment_font_view_pager.xml" value="0.2526041666666667" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/layout/fragment_food_view_pager.xml" value="0.22962962962962963" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/layout/fragment_fun_view_pager.xml" value="0.2526041666666667" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/layout/fragment_home.xml" value="0.2526041666666667" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/layout/fragment_home_recent_edit_view_pager.xml" value="0.1515625" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/layout/fragment_image_selector.xml" value="0.176" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/layout/fragment_img_selector.xml" value="0.2" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/layout/fragment_input_text.xml" value="0.2526041666666667" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/layout/fragment_main_edit_screen.xml" value="0.22407407407407406" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/layout/fragment_new_sticker.xml" value="0.1" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/layout/fragment_paint_brush_view_pager.xml" value="0.14114583333333333" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/layout/fragment_painting.xml" value="0.264" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/layout/fragment_rotation.xml" value="0.2" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/layout/fragment_save_image.xml" value="0.264" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/layout/fragment_splash_screen.xml" value="0.2" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/layout/fragment_sticker.xml" value="0.20089285714285715" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/layout/fragment_text_sticker.xml" value="0.17751479289940827" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/layout/fragment_words_view_pager.xml" value="0.21666666666666667" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/layout/fragment_x.xml" value="0.2526041666666667" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/layout/hom_recycler_view_recommendation_item.xml" value="0.14114583333333333" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/layout/home_collage_grid_item.xml" value="0.152" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/layout/home_collage_grid_item_2.xml" value="0.1515625" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/layout/home_recycler_view_carousel_item.xml" value="0.2526041666666667" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/layout/home_recycler_view_recommendation_item.xml" value="0.20185185185185187" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/layout/home_recyclerview_grid_item.xml" value="0.2526041666666667" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/layout/home_screen_edit_item.xml" value="0.2105643994211288" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/layout/img_shower_item.xml" value="0.2526041666666667" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/layout/img_shower_item_shimmer_effect.xml" value="0.14114583333333333" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/layout/loading_dialog.xml" value="0.25848849945235486" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/layout/main_navigation_drawer_header.xml" value="0.2526041666666667" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/layout/main_screen_navbar_item.xml" value="0.4713313896987366" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/layout/painting_brush_tool.xml" value="0.20925925925925926" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/layout/painting_eraser_tool.xml" value="0.2526041666666667" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/layout/recent_image_item.xml" value="0.2526041666666667" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/layout/recent_photo_item.xml" value="0.2526041666666667" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/layout/recommanded_item.xml" value="0.14114583333333333" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/layout/share_item.xml" value="0.2526041666666667" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/layout/sticker_recycler_view_item.xml" value="0.1515625" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/layout/ucrop_view.xml" value="0.2526041666666667" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/layout/view_pager_emoji_item.xml" value="0.22037037037037038" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/layout/xyz.xml" value="0.22962962962962963" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/menu/adjust_bottom_nav_menu_item.xml" value="0.14114583333333333" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/menu/adjust_top_nav_menu.xml" value="0.2222222222222222" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/menu/common_tick_menu.xml" value="0.2222222222222222" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/menu/crop_nav_item.xml" value="0.1515625" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/menu/home_bottom_nav_menu.xml" value="0.2526041666666667" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/menu/image_selector_bottom_nav_menu.xml" value="0.2526041666666667" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/menu/img_selector_menu.xml" value="0.2526041666666667" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/menu/main_edit_menu.xml" value="0.2222222222222222" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/menu/main_navigation_slider_menu.xml" value="0.152" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/menu/paint_menu.xml" value="0.2222222222222222" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/menu/save_img_menu.xml" value="0.2526041666666667" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/menu/save_menu.xml" value="0.2526041666666667" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.26461538461538464" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.26461538461538464" />
+        <entry key="..\:/App Building/PhotoEditor/app/src/main/res/xml/fragment_splash_screen_xml_constraintlayout_scene.xml" value="0.2526041666666667" />
+        <entry key="..\:/App Building/PhotoEditor/tedimagepicker/src/main/res/layout/activity_ted_image_picker.xml" value="0.14114583333333333" />
+        <entry key="..\:/App Building/PhotoEditor/tedimagepicker/src/main/res/layout/activity_zoom_out.xml" value="0.14114583333333333" />
+        <entry key="..\:/App Building/PhotoEditor/tedimagepicker/src/main/res/layout/item_album.xml" value="0.1515625" />
+        <entry key="..\:/App Building/PhotoEditor/tedimagepicker/src/main/res/layout/item_gallery_camera.xml" value="0.1515625" />
+        <entry key="..\:/App Building/PhotoEditor/tedimagepicker/src/main/res/layout/item_gallery_media.xml" value="0.1515625" />
+        <entry key="..\:/App Building/PhotoEditor/tedimagepicker/src/main/res/layout/item_selected_media.xml" value="0.1515625" />
+        <entry key="..\:/Users/WASIM/Desktop/fiverr/Android Development/Demo App/app/src/main/res/layout/activity_main.xml" value="0.18888888888888888" />
+        <entry key="..\:/Users/WASIM/Desktop/fiverr/Android Development/Demo App/app/src/main/res/layout/fragment_first_viewpager_of_home.xml" value="0.2484375" />
+        <entry key="..\:/Users/WASIM/Desktop/fiverr/Android Development/Demo App/app/src/main/res/layout/fragment_fun_view_pager.xml" value="0.2289156626506024" />
+        <entry key="..\:/Users/WASIM/Desktop/fiverr/Android Development/Demo App/app/src/main/res/layout/fragment_home.xml" value="0.18888888888888888" />
+        <entry key="..\:/Users/WASIM/Desktop/fiverr/Android Development/Demo App/app/src/main/res/layout/fragment_splash_screen.xml" value="0.14895833333333333" />
+        <entry key="..\:/Users/WASIM/Desktop/fiverr/Android Development/Demo App/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.16510416666666666" />
+        <entry key="..\:/Users/WASIM/Desktop/fiverr/Android Development/Demo App/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.16510416666666666" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

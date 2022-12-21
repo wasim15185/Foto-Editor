@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".screens.viewPager.collageSelectorFragment.CollageEditViewPagerFragment">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:visibility="gone"
+            android:id="@+id/collage_edit_navbar_recyclerView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:orientation="horizontal"
+
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:listitem="@layout/collage_edit_screen_nav_item"
+            />
+
+
+        <ImageButton
+            android:id="@+id/collage_rotate_btn"
+            android:layout_width="@dimen/btn_size_collage_edit_view_pager"
+            android:layout_height="@dimen/btn_size_collage_edit_view_pager"
+            android:layout_marginStart="32dp"
+            android:background="@drawable/collage_edit_btn_background"
+            android:src="@drawable/ic_icon_rotate_right_90_degree"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/collage_flip_btn"
+            android:layout_width="@dimen/btn_size_collage_edit_view_pager"
+            android:layout_height="@dimen/btn_size_collage_edit_view_pager"
+            android:src="@drawable/ic_baseline_flip_24"
+            android:background="@drawable/collage_edit_btn_background"
+            app:layout_constraintBottom_toBottomOf="@+id/collage_rotate_btn"
+            app:layout_constraintEnd_toStartOf="@+id/collage_mirror_btn"
+            app:layout_constraintStart_toEndOf="@+id/collage_rotate_btn"
+            app:layout_constraintTop_toTopOf="@+id/collage_rotate_btn" />
+
+        <ImageButton
+            android:id="@+id/collage_mirror_btn"
+            android:layout_width="@dimen/btn_size_collage_edit_view_pager"
+            android:layout_height="@dimen/btn_size_collage_edit_view_pager"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/collage_edit_btn_background"
+            android:src="@drawable/ic_mirror_vertical_24"
+            app:layout_constraintBottom_toBottomOf="@+id/collage_flip_btn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/collage_flip_btn" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

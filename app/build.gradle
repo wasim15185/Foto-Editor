@@ -1,0 +1,232 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    // Alternatively, to generate Kotlin code suitable for Kotlin-only For SAFEARGS
+    //id("androidx.navigation.safeargs.kotlin")
+    id("androidx.navigation.safeargs")
+    id 'kotlin-kapt'
+    id 'kotlin-parcelize'
+    id("dagger.hilt.android.plugin")
+
+//    id 'com.google.gms.google-services' // this is for firebase
+
+}
+
+android {
+    compileSdkVersion 31
+    buildToolsVersion "30.0.3"
+
+    defaultConfig {
+        applicationId "com.android.demoeditor"
+        minSdkVersion 21
+        targetSdkVersion 31
+        versionCode 1
+        versionName "1.0"
+
+        renderscriptTargetApi 18
+        renderscriptSupportModeEnabled = true
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    buildFeatures {
+        dataBinding true
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+dependencies {
+
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+
+    implementation 'androidx.core:core-ktx:1.7.0' // previous version 1.6.0
+    implementation 'androidx.appcompat:appcompat:1.4.0' // previous version 1.3.1
+    implementation 'com.google.android.material:material:1.4.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.2' // previous version 2.1.1
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+
+    // ---------------- FireBase-------------
+
+//    // Import the Firebase BoM (Mainly Google Analytics)
+//    implementation platform('com.google.firebase:firebase-bom:29.0.4')
+//    // Add the dependency for the Firebase SDK for Google Analytics
+//    // When using the BoM, don't specify versions in Firebase dependencies
+//    implementation 'com.google.firebase:firebase-analytics-ktx'
+
+    // ---------------- xxx -------------
+
+
+    // Gpu Image
+//    implementation project(path: ':gpu_image_library')
+
+    // RenderScript Toolkit
+    implementation project(path: ':renderscript-toolkit')
+
+    // Room DataBase
+    kapt "androidx.room:room-compiler:$roomVersion"
+    implementation "androidx.room:room-runtime:$roomVersion"
+    implementation "androidx.room:room-ktx:$roomVersion"
+
+    testImplementation 'junit:junit:'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+
+    //Coroutines
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutines_version"
+
+    // Navigation
+
+    // Kotlin
+    implementation("androidx.navigation:navigation-fragment-ktx:$nav_version")
+    implementation("androidx.navigation:navigation-ui-ktx:$nav_version")
+
+    // Feature module Support
+    implementation("androidx.navigation:navigation-dynamic-features-fragment:$nav_version")
+
+    // Testing Navigation
+    androidTestImplementation("androidx.navigation:navigation-testing:$nav_version")
+
+    // Navigation Compose Integration
+    implementation("androidx.navigation:navigation-compose:2.4.0-alpha02")
+
+    //Retrofit
+    implementation "com.squareup.retrofit2:retrofit:$retrofit_version"
+    //Moshi
+    implementation("com.squareup.moshi:moshi:1.12.0")
+    implementation("com.squareup.moshi:moshi-kotlin:1.12.0")
+
+
+//    ViewModel
+//    ---------
+
+    // ViewModel
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version")
+    // LiveData
+    implementation("androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version")
+    // Lifecycles only (without ViewModel or LiveData)
+    implementation("androidx.lifecycle:lifecycle-runtime-ktx:$lifecycle_version")
+
+    // Saved state module for ViewModel
+    implementation("androidx.lifecycle:lifecycle-viewmodel-savedstate:$lifecycle_version")
+
+    // Annotation processor
+    kapt("androidx.lifecycle:lifecycle-compiler:$lifecycle_version")
+    // optional - helpers for implementing LifecycleOwner in a Service
+    implementation("androidx.lifecycle:lifecycle-service:$lifecycle_version")
+
+    // optional - ProcessLifecycleOwner provides a lifecycle for the whole application process
+    implementation("androidx.lifecycle:lifecycle-process:$lifecycle_version")
+    // optional - ReactiveStreams support for LiveData
+    implementation("androidx.lifecycle:lifecycle-reactivestreams-ktx:$lifecycle_version")
+
+    // optional - Test helpers for LiveData
+    testImplementation("androidx.arch.core:core-testing:$arch_version")
+
+//--End of ViewModel & LifeCycle Library--
+
+
+    // image editor
+    implementation 'com.burhanrashid52:photoeditor:1.5.1'
+    // Recycler View
+    implementation("androidx.recyclerview:recyclerview:1.2.1")
+
+
+    // for  glide
+
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
+
+
+    // Run time permissions
+    implementation 'com.vmadalin:easypermissions-ktx:1.0.0'
+
+
+    //image picker
+    implementation 'com.zhihu.android:matisse:0.5.3-beta3'
+
+    // GPU Image
+    implementation 'jp.co.cyberagent.android:gpuimage:2.1.0'
+
+    // View Pager 2
+    implementation("androidx.viewpager2:viewpager2:$viewpager2_version")
+
+    //Crop View
+    implementation 'com.isseiaoki:simplecropview:1.1.8'
+
+
+//    implementation 'androidx.emoji:emoji:1.1.0'
+//    implementation 'androidx.emoji:emoji-appcompat:1.1.0'
+//    implementation 'androidx.emoji:emoji-bundled:1.1.0'
+
+    //Emoji App Compatibility
+    implementation("androidx.emoji2:emoji2:$emoji2_version")
+    implementation("androidx.emoji2:emoji2-views:$emoji2_version")
+    implementation("androidx.emoji2:emoji2-views-helper:$emoji2_version")
+
+
+    // Dagger-Hilt
+    implementation("com.google.dagger:hilt-android:2.38.1")
+    kapt("com.google.dagger:hilt-android-compiler:2.38.1")
+
+    //Shimmer Effect
+    implementation 'com.facebook.shimmer:shimmer:0.5.0'
+
+    // Image Picker
+    implementation project(path: ':tedimagepicker')
+
+    // Image Zoomer
+    implementation 'com.github.chrisbanes:PhotoView:2.3.0'
+
+    // Colleague or Photo-Puzzle View
+    implementation 'com.flying.xiaopo:puzzle:2.0.0-alpha'
+
+    // Circular Image-View
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+    // custom loading view
+    implementation 'com.github.muramrr:LoadingView:1.2'
+
+    // custom bottom-navigation bar
+    implementation 'com.github.armcha:SpaceNavigationView:1.6.0'
+
+    // carousel
+    implementation 'com.github.akshaaatt:Sliding-Carousel:1.0.4'
+
+    // Recycler-view item decorder
+    implementation 'com.github.grzegorzojdana:SpacingItemDecoration:1.1.0'
+
+    // Splash - Screen
+    implementation 'androidx.core:core-splashscreen:1.0.0-beta01'
+
+    // Banner-View
+    implementation 'com.github.zhpanvip:bannerviewpager:3.5.5'
+
+    // Text Animation
+    def htextview_version = "0.1.6"
+    implementation "com.hanks:htextview-base:$htextview_version"        // base library
+    implementation "com.hanks:htextview-scale:$htextview_version"       // scale library
+    //--- End of Text Animation ---
+
+
+}
+
+
+// Allow references to generated code ( This for Dagger-Hilt )
+kapt {
+    correctErrorTypes = true
+}

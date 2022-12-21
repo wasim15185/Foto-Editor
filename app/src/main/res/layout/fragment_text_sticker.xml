@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="textViewModel"
+            type="com.android.demoeditor.viewModel.TextStickerViewModel" />
+
+        <import type="android.view.View" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/text_sticker_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".screens.TextStickerFragment">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appBarLayout_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/toolbar"
+                style="@style/CustomToolBar"
+                app:menu="@menu/common_tick_menu"
+                app:title="Text Sticker"
+                app:titleCentered="true"
+                app:titleTextAppearance="@style/text_appearance_material_toolbar_title"
+                app:navigationIcon="@drawable/ic_back_arrow_24" />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+
+        <LinearLayout
+            android:id="@+id/text_sticker_view_container"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/include_layout_of_bottom_view_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/appBarLayout_id">
+
+            <com.mmdev.loadingviewlib.LoadingView
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                app:loadStrokeWidth="8dp"
+                app:loadStrokeColor="?attr/colorSecondary"
+                android:visibility="@{textViewModel.isImgLoading ? View.VISIBLE : View.GONE}"
+                tools:visibility="visible" />
+
+            <!-- Do not touch this view group 'android.example.photoeditor.customView.stickerLib.StickerView'  -->
+
+
+            <com.android.demoeditor.customView.stickerPackage.StickerView
+                android:id="@+id/text_sticker_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="@{textViewModel.isImgLoading ? View.GONE : View.VISIBLE}"
+                app:borderAlpha="255"
+                app:borderColor="#EA0606"
+                app:bringToFrontCurrentSticker="true"
+                app:showBorder="true"
+                app:showIcons="true">
+
+
+                <ImageView
+                    android:id="@+id/main_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:transitionName="@string/img_transition_unique_name"
+                    tools:src="@drawable/suv" />
+
+            </com.android.demoeditor.customView.stickerPackage.StickerView>
+
+
+        </LinearLayout>
+
+
+        <!--  tools container-->
+
+        <include
+            android:id="@+id/include_layout_of_bottom_view_text"
+            layout="@layout/bottom_view_text_sticker"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</layout>
+
+
+
+
+
+

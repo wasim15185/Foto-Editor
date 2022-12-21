@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="clickListener"
+            type="com.android.demoeditor.screens.EditScreenBottomNavigationListener" />
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <HorizontalScrollView
+            android:id="@+id/nav_bottom_scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/main_navigation_linearlayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                >
+
+                <!-- CROP-->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/crop"
+                    style="@style/MoreStyleCardView"
+                    android:onClick="@{()->clickListener.crop()}"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="@dimen/editor_nav_item_speace"
+                    android:gravity="center"
+                    app:cardElevation="0dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/rotation"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="0dp"
+                            android:layout_weight="60"
+                            android:src="@drawable/ic_crop"
+
+                            />
+
+                        <TextView
+                            style="@style/CustomTextStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="40"
+                            android:textAlignment="center"
+                            android:gravity="center_horizontal"
+                            android:text="@string/crop" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <!-- Rotation  Icon-->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/rotation"
+                    style="@style/MoreStyleCardView"
+                    android:onClick="@{()->clickListener.rotate()}"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="@dimen/editor_nav_item_speace"
+                    android:gravity="center"
+                    app:cardElevation="0dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/adjust"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/crop"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="0dp"
+                            android:layout_weight="60"
+                            android:src="@drawable/ic_rotate_left"
+
+                            />
+
+                        <TextView
+                            style="@style/CustomTextStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="40"
+                            android:textAlignment="center"
+                            android:gravity="center_horizontal"
+                            android:text="@string/rotate" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <!-- Adjust Icon-->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/adjust"
+                    style="@style/MoreStyleCardView"
+                    android:onClick="@{()->clickListener.adjust()}"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="@dimen/editor_nav_item_speace"
+                    android:gravity="center"
+                    app:cardElevation="0dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/brush"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/rotation"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="0dp"
+                            android:layout_weight="60"
+                            android:src="@drawable/ic_adjust"
+
+                            />
+
+                        <TextView
+                            style="@style/CustomTextStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="40"
+                            android:textAlignment="center"
+                            android:gravity="center_horizontal"
+                            android:text="@string/adjust" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <!-- BRUSH Icon-->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/brush"
+                    style="@style/MoreStyleCardView"
+                    android:onClick="@{()->clickListener.paint()}"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="@dimen/editor_nav_item_speace"
+                    android:gravity="center"
+                    app:cardElevation="0dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/filter"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/adjust"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="0dp"
+                            android:layout_weight="60"
+                            android:src="@drawable/ic_brush"
+                            />
+
+                        <TextView
+                            style="@style/CustomTextStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="40"
+                            android:textAlignment="center"
+                            android:gravity="center_horizontal"
+                            android:text="@string/brush_text" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <!-- FILTER Icon-->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/filter"
+                    style="@style/MoreStyleCardView"
+                    android:onClick="@{()->clickListener.filter()}"
+
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="@dimen/editor_nav_item_speace"
+                    android:gravity="center"
+                    app:cardElevation="0dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/text"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/brush"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="0dp"
+                            android:layout_weight="60"
+                            android:src="@drawable/ic_filter"
+
+                            />
+
+                        <TextView
+                            style="@style/CustomTextStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="40"
+                            android:textAlignment="center"
+                            android:gravity="center_horizontal"
+                            android:text="@string/filter" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <!-- TEXT Icon-->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/text"
+                    style="@style/MoreStyleCardView"
+                    android:onClick="@{()->clickListener.textSticker()}"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="@dimen/editor_nav_item_speace"
+                    android:gravity="center"
+                    app:cardElevation="0dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/sticker"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/filter"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="0dp"
+                            android:layout_weight="60"
+                            android:src="@drawable/ic_text"
+
+                            />
+
+                        <TextView
+                            style="@style/CustomTextStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="40"
+                            android:textAlignment="center"
+                            android:gravity="center_horizontal"
+                            android:text="@string/text" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <!-- STICKER Icon-->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/sticker"
+                    style="@style/MoreStyleCardView"
+                    android:onClick="@{()->clickListener.sticker()}"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="@dimen/editor_nav_item_speace"
+                    android:gravity="center"
+                    app:cardElevation="0dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/text"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="0dp"
+                            android:layout_weight="60"
+                            android:src="@drawable/ic_sticker"
+
+                            />
+
+                        <TextView
+                            style="@style/CustomTextStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="40"
+                            android:textAlignment="center"
+                            android:gravity="center_horizontal"
+                            android:text="@string/sticker" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </HorizontalScrollView>
+
+
+
+    </LinearLayout>
+
+</layout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".screens.AboutFragment">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/about_appBarLayout_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/toolbar"
+                style="@style/CustomToolBar"
+                app:navigationIcon="@drawable/ic_back_arrow_24"
+                app:title="About"
+                app:titleCentered="true"
+                app:titleTextAppearance="@style/text_appearance_material_toolbar_title" />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+
+<!--        <ImageView-->
+<!--            android:id="@+id/imageView5"-->
+<!--            android:layout_width="92dp"-->
+<!--            android:layout_height="92dp"-->
+<!--            android:src="@drawable/ic_icon_original"-->
+<!--            app:layout_constraintBottom_toTopOf="@+id/textView4"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/about_appBarLayout_id" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/version_no"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="8dp"-->
+<!--            android:fontFamily="@font/roboto_medium_500"-->
+<!--            android:text="@string/version_no"-->
+<!--            android:textAlignment="center"-->
+<!--            app:layout_constraintEnd_toEndOf="@+id/imageView5"-->
+<!--            app:layout_constraintStart_toStartOf="@+id/imageView5"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/imageView5" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/textView4"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginBottom="8dp"-->
+<!--            android:fontFamily="@font/roboto_medium_500"-->
+<!--            android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle2"-->
+<!--            android:text="@string/about_written_text"-->
+<!--            android:textAlignment="center"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent" />-->
+
+
+        <TextView
+            android:id="@+id/MyText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/about_written_text"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/about_appBarLayout_id">
+
+        </TextView>
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/floating_action_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_margin="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+             android:contentDescription="Play Store"
+            android:textColor="#fff"
+            app:iconTint="#fff"
+             app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/MyText"
+            app:layout_constraintVertical_bias="0.9"
+            android:text="Live in Play Store"
+            app:icon="@drawable/playstore_24" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

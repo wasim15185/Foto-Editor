@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+<!--    <corners android:radius="@dimen/text_sticker_round_corner_value" />-->
+    <solid android:color="@color/text_sticker_item_dark" />
+
+
+</shape>

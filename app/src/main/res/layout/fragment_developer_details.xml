@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/developer_bg_color"
+        tools:context="screens.DeveloperDetailsFragment">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/about_appBarLayout_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/toolbar"
+                style="@style/CustomToolBar"
+                app:navigationIcon="@drawable/ic_back_arrow_24"
+                app:title="Developer Details"
+                app:titleCentered="true"
+                app:titleTextAppearance="@style/text_appearance_material_toolbar_title" />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+
+        <!--        <com.google.android.material.imageview.ShapeableImageView-->
+        <!--            android:id="@+id/character_img_id"-->
+        <!--            android:layout_width="108dp"-->
+        <!--            android:layout_height="108dp"-->
+
+        <!--            android:layout_marginStart="12dp"-->
+        <!--            android:layout_marginTop="16dp"-->
+        <!--            android:adjustViewBounds="true"-->
+        <!--            android:background="@drawable/developer_img_background"-->
+        <!--            android:cropToPadding="true"-->
+        <!--            android:scaleType="centerCrop"-->
+
+        <!--            android:src="@drawable/developer_img"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+
+        <!--            app:layout_constraintTop_toBottomOf="@+id/about_appBarLayout_id"-->
+        <!--            tools:src="@drawable/developer_img" />-->
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/developer_name"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginStart="12dp"-->
+        <!--            android:layout_marginTop="16dp"-->
+        <!--            android:fontFamily="@font/roboto_bold_700"-->
+        <!--            android:text="@string/developer_name"-->
+        <!--            android:textColor="?attr/colorOnPrimary"-->
+        <!--            android:textSize="26sp"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintHorizontal_bias="0.0"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+        <!--            app:layout_constraintTop_toBottomOf="@+id/character_img_id" />-->
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/developer_description"-->
+        <!--            style="@style/TextAppearance.MaterialComponents.Subtitle1"-->
+        <!--            android:layout_width="0dp"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginStart="12dp"-->
+        <!--            android:layout_marginTop="16dp"-->
+        <!--            android:layout_marginEnd="8dp"-->
+        <!--            android:fontFamily="@font/roboto_medium_500"-->
+        <!--            android:text="@string/developer_description_text"-->
+        <!--            android:textColor="#3E3E3E"-->
+        <!--            android:textSize="15sp"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+        <!--            app:layout_constraintTop_toBottomOf="@+id/developer_name" />-->
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/developer_connection_text"-->
+        <!--            style="@style/TextAppearance.MaterialComponents.Headline6"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginStart="12dp"-->
+        <!--            android:layout_marginTop="16dp"-->
+        <!--            android:text="Reach at me :"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+        <!--            app:layout_constraintTop_toBottomOf="@+id/developer_description" />-->
+
+
+        <FrameLayout
+            android:id="@+id/image_holding_container"
+            android:layout_width="0dp"
+            android:layout_height="400dp"
+            android:background="@android:color/transparent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/about_appBarLayout_id">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/developer_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="40dp"
+                    android:background="@drawable/developer_img_background"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/developer_bg_removed"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </FrameLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/body_container"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image_holding_container"
+            app:layout_constraintVertical_bias="0.0">
+
+            <com.hanks.htextview.scale.ScaleTextView
+                android:id="@+id/developer_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/roboto_bold_700"
+                android:text="@string/developer_name"
+                android:letterSpacing="0.1"
+                android:textColor="?attr/colorOnPrimary"
+                android:textSize="26sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/developer_description"
+                style="@style/TextAppearance.MaterialComponents.Subtitle1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/roboto_medium_500"
+                android:text="@string/developer_description_text"
+                android:textColor="@color/developer_about_text_color"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/developer_name" />
+
+            <TextView
+                android:id="@+id/developer_connection_text"
+                style="@style/TextAppearance.MaterialComponents.Headline6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="16dp"
+                android:text="Reach at me :"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/developer_description" />
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/mail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="16dp"
+                android:backgroundTint="?attr/colorSecondary"
+                android:text="Send me mail"
+                android:textColor="#fff"
+                android:textSize="16sp"
+                app:icon="@drawable/ic_baseline_mail_outline_24"
+                app:iconSize="20sp"
+                app:iconTint="#fff"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/linkedin"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/developer_connection_text"
+                app:layout_constraintVertical_bias="0.17000002" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/linkedin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="12dp"
+                android:backgroundTint="@color/linkedin_btn_color"
+                android:text="Ping Me"
+                app:icon="@drawable/linkedin_outline"
+                app:layout_constraintBottom_toBottomOf="@+id/mail"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/mail" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

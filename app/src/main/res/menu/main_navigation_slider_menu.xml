@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <!--    <item-->
+    <!--        android:id="@+id/setting"-->
+    <!--        android:icon="@drawable/ic_setting"-->
+    <!--        android:title="Setting" />-->
+
+
+    <!--    <item android:title="about">-->
+
+    <!--        <menu>-->
+
+    <!--            <item-->
+    <!--                android:id="@+id/rate_us"-->
+    <!--                android:icon="@drawable/ic_rate_24"-->
+    <!--                android:title="Rate Us" />-->
+
+
+    <item
+        android:id="@+id/developer_contact"
+        android:icon="@drawable/developer_icon_24"
+        android:title="Developer" />
+
+    <item
+        android:id="@+id/about"
+        android:icon="@drawable/ic_about_us"
+        android:title="About" />
+
+
+    <!--        </menu>-->
+
+    <!--    </item>-->
+
+</menu>

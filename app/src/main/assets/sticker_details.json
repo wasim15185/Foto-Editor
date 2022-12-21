@@ -1,0 +1,24 @@
+[
+
+  {
+    "id": "ALKDW8DA5SD" ,
+    "name": "A",
+    "color": 89754,
+    "typefaceName" : "Roboto"
+  } ,
+  {
+    "id": "PADWWW894" ,
+    "name": "B",
+    "color": 123,
+    "typefaceName" : "NUMERIC"
+  } ,
+  {
+    "id": "ZDWD121AW" ,
+    "name": "C",
+    "color": 214,
+    "typefaceName" : "Sands Sar"
+  }
+
+
+
+]

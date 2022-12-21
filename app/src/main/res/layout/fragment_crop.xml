@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="cropViewModel"
+            type="com.android.demoeditor.viewModel.CropScreenViewModel" />
+
+        <import type="android.view.View"/>
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".screens.CropFragment">
+
+
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appBarLayout_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/toolbar"
+                style="@style/CustomToolBar"
+                app:menu="@menu/common_tick_menu"
+                app:title="Crop"
+                app:titleCentered="true"
+                app:titleTextAppearance="@style/text_appearance_material_toolbar_title"
+                app:navigationIcon="@drawable/ic_back_arrow_24" />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+
+        <com.isseiaoki.simplecropview.CropImageView
+            android:id="@+id/cropImageView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingLeft="16dp"
+            android:paddingTop="16dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="16dp"
+            android:visibility="@{cropViewModel.isImgLoading ? View.GONE : View.VISIBLE}"
+
+            app:layout_constraintBottom_toTopOf="@+id/crop_navigation_container"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/appBarLayout_id"
+            app:scv_background_color="#1C1C1C"
+            app:scv_crop_mode="fit_image"
+            app:scv_frame_color="?attr/colorSecondary"
+            app:scv_frame_stroke_weight="1dp"
+            app:scv_guide_color="?attr/colorSecondaryVariant"
+            app:scv_guide_show_mode="show_always"
+            app:scv_guide_stroke_weight="1dp"
+            app:scv_handle_color="?attr/colorSecondary"
+            app:scv_handle_show_mode="not_show"
+            app:scv_handle_size="8dp"
+            app:scv_min_frame_size="50dp"
+            app:scv_overlay_color="#aa1c1c1c"
+            app:scv_touch_padding="16dp" />
+
+
+        <com.mmdev.loadingviewlib.LoadingView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            app:loadStrokeWidth="8dp"
+            app:loadStrokeColor="?attr/colorSecondary"
+            android:visibility="@{cropViewModel.isImgLoading ? View.VISIBLE : View.GONE}"
+            app:layout_constraintBottom_toTopOf="@+id/crop_navigation_container"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/appBarLayout_id"
+            tools:visibility="visible" />
+
+        <LinearLayout
+            android:id="@+id/crop_navigation_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/crop_navigation_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/transparent_rect"
+                app:itemIconTint="@color/bottom_navbar_icon_style_for_active"
+                app:itemRippleColor="@null"
+                app:itemTextColor="@color/bottom_navbar_icon_style_for_active"
+                app:labelVisibilityMode="labeled"
+                app:menu="@menu/crop_nav_item" />
+        </LinearLayout>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

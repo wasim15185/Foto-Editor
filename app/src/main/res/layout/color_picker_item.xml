@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="colorPickerItemData"
+            type="com.android.demoeditor.data.ColorPickerData" />
+
+
+        <variable
+            name="clickListener"
+            type="com.android.demoeditor.recyclerViews.ColorPickerItemListener" />
+
+        <variable
+            name="position"
+            type="Integer" />
+
+    </data>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:onClick="@{()-> clickListener.onClick(colorPickerItemData,position)}"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+
+                android:id="@+id/color_picker_item"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                tools:background="@color/dracula_primary"
+                android:background="@{colorPickerItemData.value}"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/select_img_view"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@+id/color_picker_item"
+                app:layout_constraintEnd_toEndOf="@+id/color_picker_item"
+                app:layout_constraintStart_toStartOf="@+id/color_picker_item"
+                app:layout_constraintTop_toTopOf="@+id/color_picker_item"
+                app:srcCompat="@drawable/ic_baseline_check_24"
+                tools:visibility="visible"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+</layout>

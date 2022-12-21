@@ -1,0 +1,53 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    ext {
+        kotlin_version = "1.5.10"
+        nav_version = "2.3.5"
+//        nav_version="2.4.0-alpha03"
+        coroutines_version= "1.5.2"
+        arch_version = "2.1.0"
+        retrofit_version="2.9.0"
+        lifecycle_version="2.3.1"
+        viewpager2_version="1.0.0"
+        hilt_version="2.38.1"
+        emoji2_version = "1.1.0-alpha01"
+        roomVersion = "2.4.1"
+//        firebase_version = "4.3.10"
+
+    }
+    repositories {
+        google()
+        mavenCentral()
+
+
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:7.0.4'
+        classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:1.6.10'
+
+        // SaveArgs
+        classpath("androidx.navigation:navigation-safe-args-gradle-plugin:$nav_version")
+        //Dagger-Hilt for DI
+        classpath("com.google.dagger:hilt-android-gradle-plugin:$hilt_version")
+
+        // ---------------- FireBase-------------
+//        classpath "com.google.gms:google-services:$firebase_version"
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+        jcenter() // Warning: this repository is going to shut down soon
+        maven { url 'https://jitpack.io' }
+
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

@@ -1,0 +1,33 @@
+{
+  "buildFiles": [
+    "E:\\App Building\\PhotoEditor\\gpu_image_library\\src\\main\\cpp\\CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "C:\\Users\\WASIM\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe",
+      "-C",
+      "E:\\App Building\\PhotoEditor\\gpu_image_library\\.cxx\\Debug\\5p1w175f\\x86_64",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "C:\\Users\\WASIM\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe",
+    "-C",
+    "E:\\App Building\\PhotoEditor\\gpu_image_library\\.cxx\\Debug\\5p1w175f\\x86_64",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {
+    "yuv-decoder-Debug-x86_64": {
+      "artifactName": "yuv-decoder",
+      "buildCommandComponents": [
+        "C:\\Users\\WASIM\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe",
+        "-C",
+        "E:\\App Building\\PhotoEditor\\gpu_image_library\\.cxx\\Debug\\5p1w175f\\x86_64",
+        "yuv-decoder"
+      ],
+      "abi": "x86_64",
+      "output": "E:\\App Building\\PhotoEditor\\gpu_image_library\\build\\intermediates\\cxx\\Debug\\5p1w175f\\obj\\x86_64\\libyuv-decoder.so",
+      "runtimeFiles": []
+    }
+  }
+}

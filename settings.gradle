@@ -1,0 +1,8 @@
+rootProject.name = "Photo Editor"
+include ':app'
+//include ':gpu_image_library'
+include ':tedimagepicker'
+include ':renderscript-toolkit'
+
+
+

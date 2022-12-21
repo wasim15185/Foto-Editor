@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="list_of_fonts">
+        <item>@font/roboto_medium_500</item>
+        <item>@font/aclonica</item>
+        <item>@font/acme</item>
+        <item>@font/akronim</item>
+        <item>@font/architects_daughter</item>
+        <item>@font/atomic_age</item>
+        <item>@font/biryani_extralight</item>
+        <item>@font/chewy</item>
+        <item>@font/courgette</item>
+        <item>@font/jolly_lodger</item>
+        <item>@font/kalam_light</item>
+        <item>@font/macondo_swash_caps</item>
+        <item>@font/meie_script</item>
+    </array>
+</resources>

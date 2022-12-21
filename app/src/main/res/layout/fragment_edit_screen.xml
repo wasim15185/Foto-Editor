@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.android.demoeditor.viewModel.EditViewModel" />
+
+        <import type="android.view.View" />
+
+        <variable
+            name="bottomNavigationListener"
+            type="com.android.demoeditor.screens.EditScreenBottomNavigationListener" />
+
+    </data>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/edit_motion_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".screens.EditScreenFragment">
+
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/main_edit_appBarLayout_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/main_edit_toolbar"
+                style="@style/CustomToolBar"
+                app:menu="@menu/save_menu"
+                app:navigationIcon="@drawable/ic_back_arrow_24"
+                app:title="Edit"
+                app:titleCentered="true"
+                app:titleTextAppearance="@style/text_appearance_material_toolbar_title" />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+
+        <com.mmdev.loadingviewlib.LoadingView
+            android:id="@+id/loadingView"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:visibility="@{viewModel.isImgLoading ? View.VISIBLE : View.GONE}"
+            app:layout_constraintBottom_toTopOf="@+id/main_navbar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/main_edit_appBarLayout_id"
+            app:loadStrokeColor="?attr/colorSecondary"
+            app:loadStrokeWidth="8dp" />
+
+        <ImageView
+            android:id="@+id/photoEditorView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="4dp"
+            android:transitionName="@string/img_transition_unique_name"
+
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@+id/main_navbar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/main_edit_appBarLayout_id"
+            tools:src="@drawable/suv" />
+
+
+        <include
+            android:id="@+id/main_navbar"
+            layout="@layout/editor_navigation_bar"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginBottom="4dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            bind:clickListener="@{bottomNavigationListener}" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</layout>

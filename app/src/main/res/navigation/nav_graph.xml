@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashScreenFragment">
+    <fragment
+        android:id="@+id/editScreenFragment_id"
+        android:name="com.android.demoeditor.screens.EditScreenFragment"
+        android:label="editFragment"
+        tools:layout="@layout/fragment_edit_screen">
+
+        <action
+            android:id="@+id/editScreenFragment_to_cropFragment"
+            app:destination="@id/cropFragment" />
+
+
+        <action
+            android:id="@+id/editScreenFragment_to_filtersFragment"
+            app:destination="@id/filtersFragment" />
+        <action
+            android:id="@+id/editScreenFragment_to_paintingFragment"
+            app:destination="@id/paintingFragment" />
+        <action
+            android:id="@+id/editScreenFragment_to_adjustEditFragment"
+            app:destination="@id/adjustEditFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:popEnterAnim="@android:anim/fade_in" />
+        <action
+            android:id="@+id/editScreenFragment_to_stickerFragment"
+            app:destination="@id/newStickerFragment" />
+        <action
+            android:id="@+id/editScreenFragment_to_textStickerFragment"
+            app:destination="@id/textStickerFragment" />
+        <action
+            android:id="@+id/editScreenFragment_to_rotationFragment"
+            app:destination="@id/rotationFragment" />
+        <argument
+            android:name="imgData"
+            app:argType="com.android.demoeditor.data.parcelData.CommonParcelData" />
+        <action
+            android:id="@+id/action_mainEditScreenFragment_id_to_saveImageFragment"
+            app:destination="@id/saveImageFragment"
+            app:popUpTo="@id/homeFragment" />
+        <action
+            android:id="@+id/editScreenFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/homeFragment" />
+
+
+    </fragment>
+
+
+
+
+    <fragment
+        android:id="@+id/cropFragment"
+        android:name="com.android.demoeditor.screens.CropFragment"
+        android:label="CropFragment"
+        tools:layout="@layout/fragment_crop"
+        >
+        <action
+            android:id="@+id/cropFragment_to_mainEditScreenFragment"
+            app:destination="@id/editScreenFragment_id"
+            app:popUpTo="@id/homeFragment" />
+        <argument
+            android:name="imgData"
+            app:argType="com.android.demoeditor.data.parcelData.CommonParcelData" />
+        <action
+            android:id="@+id/cropFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/homeFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.android.demoeditor.screens.HomeFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/fragment_home"
+        >
+        <action
+            android:id="@+id/homeFragment_to_mainEditScreenFragment"
+            app:destination="@id/editScreenFragment_id" />
+        <action
+            android:id="@+id/homeFragment_to_imgSelectorFragment"
+            app:destination="@id/imgSelectorFragment" />
+        <action
+            android:id="@+id/homeFragment_to_collageSelectorFragment"
+            app:destination="@id/collageSelectorFragment" />
+        <action
+            android:id="@+id/homeFragment_to_aboutFragment"
+            app:destination="@id/aboutFragment"
+            app:enterAnim="@anim/slide_in_right" />
+        <action
+            android:id="@+id/homeFragment_to_rotationFragment"
+            app:destination="@id/rotationFragment" />
+        <action
+            android:id="@+id/homeFragment_to_adjustEditFragment"
+            app:destination="@id/adjustEditFragment" />
+        <action
+            android:id="@+id/homeFragment_to_textStickerFragment"
+            app:destination="@id/textStickerFragment" />
+        <action
+            android:id="@+id/homeFragment_to_cropFragment"
+            app:destination="@id/cropFragment" />
+        <action
+            android:id="@+id/homeFragment_to_newStickerFragment"
+            app:destination="@id/newStickerFragment" />
+        <action
+            android:id="@+id/homeFragment_to_paintingFragment"
+            app:destination="@id/paintingFragment" />
+        <action
+            android:id="@+id/homeFragment_to_filtersFragment"
+            app:destination="@id/filtersFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_developerDetailsFragment"
+            app:destination="@id/developerDetailsFragment"
+            app:enterAnim="@anim/slide_in_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/filtersFragment"
+        android:name="com.android.demoeditor.screens.FiltersFragment"
+        android:label="FiltersFragment"
+        tools:layout="@layout/fragment_filters"
+        >
+        <action
+            android:id="@+id/filtersFragment_to_mainEditScreenFragment"
+            app:destination="@id/editScreenFragment_id"
+            app:popUpTo="@id/homeFragment" />
+        <argument
+            android:name="imgData"
+            app:argType="com.android.demoeditor.data.parcelData.CommonParcelData" />
+        <action
+            android:id="@+id/filtersFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/paintingFragment"
+        android:name="com.android.demoeditor.screens.PaintingFragment"
+        android:label="PaintingFragment"
+        tools:layout="@layout/fragment_painting"
+        >
+        <action
+            android:id="@+id/paintingFragment_to_mainEditScreenFragment"
+            app:destination="@id/editScreenFragment_id"
+            app:popUpTo="@id/homeFragment" />
+        <argument
+            android:name="imgData"
+            app:argType="com.android.demoeditor.data.parcelData.CommonParcelData" />
+        <action
+            android:id="@+id/paintingFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/adjustEditFragment"
+        android:name="com.android.demoeditor.screens.AdjustFragment"
+        android:label="AdjustEditFragment"
+        tools:layout="@layout/fragment_adjust"
+        >
+        <action
+            android:id="@+id/adjustEditFragment_to_mainEditScreenFragment"
+            app:destination="@id/editScreenFragment_id"
+            app:enterAnim="@android:anim/fade_in"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popUpTo="@id/homeFragment" />
+        <argument
+            android:name="imgData"
+            app:argType="com.android.demoeditor.data.parcelData.CommonParcelData" />
+        <action
+            android:id="@+id/adjustEditFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/newStickerFragment"
+        android:name="com.android.demoeditor.screens.StickerFragment"
+        android:label="fragment_new_sticker"
+        tools:layout="@layout/fragment_sticker" >
+        <action
+            android:id="@+id/newStickerFragment_to_mainEditScreenFragment"
+            app:destination="@id/editScreenFragment_id"
+            app:popUpTo="@id/homeFragment" />
+        <argument
+            android:name="imgData"
+            app:argType="com.android.demoeditor.data.parcelData.CommonParcelData" />
+        <action
+            android:id="@+id/newStickerFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/textStickerFragment"
+        android:name="com.android.demoeditor.screens.TextStickerFragment"
+        android:label="TextStickerFragment"
+        tools:layout="@layout/fragment_text_sticker"
+        >
+        <action
+            android:id="@+id/textStickerFragment_to_mainEditScreenFragment"
+            app:destination="@id/editScreenFragment_id"
+            app:popUpTo="@id/homeFragment" />
+        <argument
+            android:name="imgData"
+            app:argType="com.android.demoeditor.data.parcelData.CommonParcelData" />
+        <action
+            android:id="@+id/textStickerFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/homeFragment" />
+
+
+    </fragment>
+    <fragment
+        android:id="@+id/rotationFragment"
+        android:name="com.android.demoeditor.screens.RotationFragment"
+        android:label="RotationFragment"
+        tools:layout="@layout/fragment_rotation"
+        >
+        <action
+            android:id="@+id/rotationFragment_to_mainEditScreenFragment"
+            app:destination="@id/editScreenFragment_id"
+            app:popUpTo="@id/homeFragment" />
+        <argument
+            android:name="imgData"
+            app:argType="com.android.demoeditor.data.parcelData.CommonParcelData" />
+        <action
+            android:id="@+id/rotationFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/imgSelectorFragment"
+        android:name="com.android.demoeditor.screens.ImgSelectorFragment"
+        android:label=" "
+        />
+    <fragment
+        android:id="@+id/collageSelectorFragment"
+        android:name="com.android.demoeditor.screens.CollageSelectorFragment"
+        android:label="CollageSelectorFragment"
+        tools:layout="@layout/fragment_collage_selector"
+        >
+        <argument
+            android:name="data"
+            app:argType="com.android.demoeditor.data.parcelData.CollageSelectorData" />
+        <action
+            android:id="@+id/collageSelectorFragment_to_mainEditScreenFragment"
+            app:destination="@id/editScreenFragment_id" />
+        <action
+            android:id="@+id/collageSelectorFragment_to_saveImageFragment"
+            app:destination="@id/saveImageFragment"
+            app:popUpTo="@id/homeFragment"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/saveImageFragment"
+        android:name="com.android.demoeditor.screens.SaveImageFragment"
+        android:label="SaveImageFragment"
+        tools:layout="@layout/fragment_save_image"
+        >
+        <argument
+            android:name="uri"
+            app:argType="android.net.Uri" />
+        <action
+            android:id="@+id/saveImageFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/splashScreenFragment"
+        android:name="com.android.demoeditor.screens.SplashScreenFragment"
+        android:label="fragment_splash_screen"
+        tools:layout="@layout/fragment_splash_screen" >
+        <action
+            android:id="@+id/splashScreenFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:popEnterAnim="@anim/slide_in_right"
+            app:popUpTo="@id/splashScreenFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.android.demoeditor.screens.AboutFragment"
+        android:label="AboutFragment"
+        tools:layout="@layout/fragment_about"
+        />
+    <fragment
+        android:id="@+id/developerDetailsFragment"
+        android:name="com.android.demoeditor.screens.DeveloperDetailsFragment"
+        android:label="fragment_developer_details"
+        tools:layout="@layout/fragment_developer_details" />
+
+
+</navigation>

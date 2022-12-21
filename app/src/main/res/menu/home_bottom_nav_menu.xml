@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+
+        <item
+            android:id="@+id/home_start_icon"
+            android:icon="@drawable/ic_home_24"
+            android:title="Home"
+            app:showAsAction="ifRoom" />
+
+
+        <item
+            android:id="@+id/home_recent"
+            android:icon="@drawable/ic_recent_24"
+            android:title="Recent"
+            app:showAsAction="ifRoom" />
+
+
+
+
+
+
+
+</menu>

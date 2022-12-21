@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+<!--    For shapeable Image View-->
+    <style name="shapeableImageViewStyle">
+        <item name="shapeAppearanceOverlay">@style/RoundedSquare</item>
+        <item name="android:background">@color/primaryColor</item>
+    </style>
+    <style name="RoundedSquare">
+        <item name="cornerSize">@dimen/filter_corner_radius_value</item>
+    </style>
+
+<!--    Style for recycler View-->
+    <style name="recyclerViewStyle" >
+        <item name="android:background">@color/primaryDarkColor</item>
+
+    </style>
+
+ <!--    Style for text View-->
+    <style name="filterTextViewStyle" parent="TextAppearance.AppCompat.Small">
+        <item name="android:background">@drawable/filter_text_shape_style</item>
+        <item name="android:textColor">@color/primaryColor</item>
+        <item name="android:textSize">8sp</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+
+
+</resources>

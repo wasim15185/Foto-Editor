@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.android.demoeditor.viewModel.CollageSelectorViewModel" />
+
+        <import type="android.view.View" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:fitsSystemWindows="true"
+        tools:context=".screens.CollageSelectorFragment">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/collage_appBarLayout_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/collage_toolbar"
+                style="@style/CustomToolBar"
+                app:menu="@menu/save_menu"
+                app:navigationIcon="@drawable/ic_back_arrow_24"
+                app:title="Collage"
+                app:titleCentered="true"
+                app:titleTextAppearance="@style/text_appearance_material_toolbar_title" />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+
+        <com.google.android.material.progressindicator.LinearProgressIndicator
+            android:id="@+id/progress_bar"
+            android:layout_width="72dp"
+            android:layout_height="wrap_content"
+            android:visibility="@{viewModel.isImgLoading ? View.GONE : View.VISIBLE}"
+            app:indicatorColor="?attr/colorSecondary"
+            app:indicatorSize="45dp"
+            app:layout_constraintBottom_toTopOf="@+id/floating_action_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/collage_appBarLayout_id"
+            app:trackThickness="4dp"
+            tools:visibility="gone" />
+
+        <com.xiaopo.flying.puzzle.SquarePuzzleView
+            android:id="@+id/puzzle_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:visibility="@{viewModel.isImgLoading ? View.VISIBLE : View.GONE}"
+            app:layout_constraintBottom_toTopOf="@+id/floating_action_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/collage_appBarLayout_id" />
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floating_action_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="bottom|right"
+            android:layout_margin="16dp"
+
+            android:contentDescription="FAB"
+
+            android:src="@drawable/ic_edit_collage_icon_24"
+            app:fabCustomSize="48dp"
+
+            app:layout_constraintBottom_toTopOf="@+id/navbar_container"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:maxImageSize="20dp" />
+
+        <LinearLayout
+            android:id="@+id/navbar_container"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/collage_tab_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:tabMode="fixed"
+                app:tabRippleColor="@null"
+                app:tabTextAppearance="@style/collage_item_background_tabItemStyle"
+                app:tabTextColor="@color/bottom_navbar_icon_style_for_active"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

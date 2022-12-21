@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="adjustViewModel"
+            type="com.android.demoeditor.viewModel.AdjustScreenViewModel" />
+
+        <import type="android.view.View" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".screens.AdjustFragment">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appBarLayout_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/toolbar"
+                style="@style/CustomToolBar"
+                app:menu="@menu/common_tick_menu"
+                app:title="Adjust"
+                app:titleCentered="true"
+                app:titleTextAppearance="@style/text_appearance_material_toolbar_title"
+                app:navigationIcon="@drawable/ic_back_arrow_24" />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <com.mmdev.loadingviewlib.LoadingView
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:visibility="@{adjustViewModel.isImgLoading ? View.VISIBLE : View.GONE}"
+
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/appBarLayout_id"
+            app:loadStrokeColor="?attr/colorSecondary"
+            app:loadStrokeWidth="8dp" />
+
+
+        <ImageView
+            android:id="@+id/render_script_img_id"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:visibility="@{adjustViewModel.isImgLoading ? View.GONE : View.VISIBLE}"
+
+
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/appBarLayout_id"
+            tools:src="@drawable/suv" />
+
+
+        <TextView
+            android:id="@+id/adjust_percent_indigator"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:textColor="#FFF"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/render_script_img_id"
+            app:layout_constraintEnd_toEndOf="@+id/render_script_img_id"
+            app:layout_constraintStart_toStartOf="@+id/render_script_img_id"
+            app:layout_constraintTop_toTopOf="@+id/render_script_img_id"
+            tools:text="20%"
+            tools:visibility="visible" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <com.android.demoeditor.customView.RulerView
+                android:id="@+id/ruler_view"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
+                app:rulerMidlineColor="#E63636"
+                app:rulerStickColor="@color/primaryLightColorForDark" />
+
+
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottom_navigation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/transparent_rect"
+                app:itemIconTint="@color/bottom_navbar_icon_style_for_active"
+                app:itemRippleColor="@null"
+                app:itemTextColor="@color/bottom_navbar_icon_style_for_active"
+                app:labelVisibilityMode="labeled"
+                app:menu="@menu/adjust_bottom_nav_menu_item" />
+
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

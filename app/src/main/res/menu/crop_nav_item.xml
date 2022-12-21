@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/free_crop_id"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_crop_free_24"
+        android:title="Free"
+        />
+
+    <item android:id="@+id/RATIO_4_3"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_crop_4_3_24"
+        android:title="4:3"
+        />
+
+    <item android:id="@+id/RATIO_3_4"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_crop_3_4_24"
+        android:title="3:4"
+        />
+
+    <item android:id="@+id/RATIO_16_9"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_crop_16_9_24"
+        android:title="16:9"
+        />
+</menu>

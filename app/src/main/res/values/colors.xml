@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--    color for light theme-->
+    <color name="primaryColor">#ffffff</color>
+    <color name="primaryLightColor">#ffffff</color>
+    <color name="primaryDarkColor">#cccccc</color>
+    <color name="secondaryColor">#8e24aa</color>
+    <color name="secondaryLightColor">#c158dc</color>
+    <color name="secondaryDarkColor">#5c007a</color>
+    <color name="primaryTextColor">#424242</color>
+    <color name="secondaryTextColor">#FFFFFF</color>
+
+    <!--    color for Dark theme-->
+
+    <color name="primaryColorForDark">#212121</color>
+    <color name="primaryLightColorForDark">#484848</color>
+    <color name="primaryDarkColorForDark">#000000</color>
+    <color name="secondaryColorForDark">#e91e63</color>
+    <color name="secondaryLightColorForDark">#ff6090</color>
+    <color name="secondaryDarkColorForDark">#b0003a</color>
+    <color name="primaryTextColorForDark">#ffffff</color>
+    <color name="secondaryTextColorForDark">#000000</color>
+
+    <color name="buttonColor">#e1e1e1</color>
+    <color name="buttonBorderColor">#dbdbdb</color>
+
+    <color name="rightTickColor">@android:color/transparent</color>
+
+    <!--    color for Bottom Sheet-->
+
+    <color name="colorForBottomSheet">@color/primaryColor</color>
+    <color name="colorForItemSelectedForNavBottom">@color/secondaryColorForDark</color>
+
+    <!--    slider color-->
+
+    <color name="sliderButtonColor">@color/secondaryColorForDark</color>
+    <color name="sliderRailColor">@color/secondaryLightColorForDark</color>
+    <color name="sliderLebelTextColor">@color/primaryDarkColor</color>
+
+
+    <!--    slider color (black)-->
+    <color name="sliderButtonColor_dark">@color/secondaryColorForDark</color>
+    <color name="sliderRailColor_dark">@color/secondaryLightColorForDark</color>
+    <color name="sliderLebelTextColor_dark">@color/primaryLightColorForDark</color>
+
+    <!--Hr color-->
+
+    <color name="hr_color">@color/primaryTextColor</color>
+
+
+    <!--filter text view color    -->
+
+    <color name="filter_text_view_color">#90484848</color>
+
+    <!--    Sticker item background color-->
+
+    <color name="sticker_item_light">#E8E8E8</color>
+    <color name="sticker_item_dark">#373737</color>
+
+    <!--    Text Sticker background color (ViewPager)-->
+    <color name="text_sticker_item_light">#E8E8E8</color>
+    <color name="text_sticker_item_dark">#373737</color>
+
+    <!--    Sticker TabItem item background color-->
+
+    <color name="colorForTabItemFragmentBottom">@color/secondaryColor</color>
+
+
+    <color name="custom_bottom_navItem">#e91e63</color>
+
+
+    <!--    Paint Layout Color(Light)-->
+    <color name="paint_layout_backcolor">#CACACA</color>
+    <color name="paint_layout_item_backcolor">#EAE8E8</color>
+
+    <!--    Paint Layout Color(Dark)-->
+    <color name="paint_layout_backcolor_dark">#474747</color>
+    <color name="paint_layout_item_backcolor_dark">#232323</color>
+
+
+    <!--   Ruler View -->
+    <!--    <color name="mid_line">#FF6300</color>-->
+    <color name="ruler_view_color_widget_rotate_mid_line">#FF6300</color>
+    <!--    <color name="ucrop_color_progress_wheel_line">#20242F</color>-->
+    <color name="ruler_view_color_progress_wheel_line">#C2185B</color>
+
+
+    <color name="keyboard_img_btn_color_for_radius">#DDDDDD</color>
+
+    <color name="text_sticker_fab_icon_color">#e91e63</color>
+    <color name="font_item_selector_color">#166DEF</color>
+    <color name="filer_item_selector_color">#e91e63</color>
+
+
+
+<!--    this for RulerView -->
+    <color name="ucrop_color_progress_wheel_line">#98999C</color>
+
+
+
+
+
+
+    <!--Palette-->
+    <color name="ucrop_color_black">#000</color>
+    <color name="ucrop_color_blaze_orange">#FF6300</color>
+    <color name="ucrop_color_ebony_clay">#20242F</color>
+    <color name="ucrop_color_heather">#B3BECE</color>
+    <color name="ucrop_color_white">#FFF</color>
+
+    <!--uCrop Activity-->
+    <color name="ucrop_color_toolbar">@color/ucrop_color_white</color>
+    <color name="ucrop_color_statusbar">#f5f5f5</color>
+    <color name="ucrop_color_toolbar_widget">@color/ucrop_color_black</color>
+    <color name="ucrop_color_widget">@color/ucrop_color_black</color>
+    <color name="ucrop_color_widget_active">@color/ucrop_color_white</color>
+    <color name="ucrop_color_active_controls_color">@color/ucrop_color_blaze_orange</color>
+    <color name="ucrop_color_inactive_controls_color">@color/ucrop_color_heather</color>
+    <color name="ucrop_color_widget_rotate_mid_line">@color/ucrop_color_blaze_orange</color>
+    <color name="ucrop_color_widget_rotate_angle">@color/ucrop_color_ebony_clay</color>
+    <color name="ucrop_color_active_aspect_ratio">@color/ucrop_color_blaze_orange</color>
+    <color name="ucrop_color_inactive_aspect_ratio">@color/ucrop_color_ebony_clay</color>
+    <color name="ucrop_color_widget_background">@color/ucrop_color_ebony_clay</color>
+    <color name="ucrop_color_widget_text">@color/ucrop_color_blaze_orange</color>
+     <color name="ucrop_color_crop_background">@color/ucrop_color_black</color>
+
+    <!--Crop View-->
+    <color name="ucrop_color_default_crop_grid">#80ffffff</color>
+    <color name="ucrop_color_default_crop_frame">#ffffff</color>
+    <color name="ucrop_color_default_dimmed">#8c000000</color>
+    <color name="ucrop_color_default_logo">#4f212121</color>
+    <color name="shimmer_base_color">#c2c2c2</color>
+    <color name="shimmer_highlight">#ffffff</color>
+
+
+<!--    Sticker view-->
+    <color name="sticker_border_color">#F15C8F</color>
+    <color name="shimmerColor">#C2C2C2</color>
+
+<!--    splash screen background color-->
+    <color name="splash_screen_background_color">#F02260</color>
+
+
+</resources>

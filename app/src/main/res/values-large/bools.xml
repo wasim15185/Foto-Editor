@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Large screen boolean values -->
+<resources>
+    <bool name="large_layout">true</bool>
+</resources>

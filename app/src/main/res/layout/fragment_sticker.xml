@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="stickerViewModel"
+            type="com.android.demoeditor.viewModel.StickerViewModel" />
+
+        <import type="android.view.View" />
+
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".screens.StickerFragment">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appBarLayout_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/toolbar"
+                style="@style/CustomToolBar"
+                app:menu="@menu/common_tick_menu"
+                app:title="Sticker"
+                app:titleCentered="true"
+                app:titleTextAppearance="@style/text_appearance_material_toolbar_title"
+                app:navigationIcon="@drawable/ic_back_arrow_24" />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+
+        <LinearLayout
+            android:id="@+id/sticker_view_container"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/sticker_tab_layout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/appBarLayout_id">
+
+            <com.mmdev.loadingviewlib.LoadingView
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                app:loadStrokeWidth="8dp"
+                app:loadStrokeColor="?attr/colorSecondary"
+                android:visibility="@{stickerViewModel.isImgLoading ? View.VISIBLE : View.GONE}"
+
+                tools:visibility="visible" />
+
+
+            <com.android.demoeditor.customView.stickerPackage.StickerView
+                android:id="@+id/sticker_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="@{stickerViewModel.isImgLoading ? View.GONE : View.VISIBLE}"
+                app:borderAlpha="255"
+                app:borderColor="#EA0606"
+                app:bringToFrontCurrentSticker="true"
+                app:showBorder="true"
+                app:showIcons="true">
+
+                <ImageView
+                    android:id="@+id/main_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:transitionName="@string/img_transition_unique_name"
+                    tools:src="@drawable/suv" />
+
+
+            </com.android.demoeditor.customView.stickerPackage.StickerView>
+
+
+        </LinearLayout>
+
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/sticker_tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/sticker_view_pager"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:tabMode="scrollable"
+            app:tabRippleColor="@null"
+            app:tabTextAppearance="@style/sticker_item_background_tabItemStyle"
+            app:tabTextColor="@drawable/sticker_fragment_bottom_tab_item_style"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/sticker_view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:background="?attr/colorPrimary"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

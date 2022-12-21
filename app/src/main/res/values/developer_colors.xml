@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="developer_about_text_color">#424242</color>
+    <color name="linkedin_btn_color">#E3E3E3</color>
+    <color name="linkedin_btn_text_color">#3A3A3A</color>
+ </resources>

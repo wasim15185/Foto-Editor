@@ -1,0 +1,125 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <!--    Theme.MaterialComponents.DayNight.NoActionBar-->
+
+    <style name="Theme.PhotoEditor" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/primaryColorForDark</item>
+        <item name="colorPrimaryVariant">@color/primaryDarkColorForDark</item>
+        <item name="colorOnPrimary">@color/primaryTextColorForDark</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/secondaryColorForDark</item>
+        <!--check 'colorSecondaryVariant'-->
+        <item name="colorSecondaryVariant">@color/secondaryDarkColorForDark</item>
+        <item name="colorOnSecondary">@color/secondaryTextColorForDark</item>
+
+<!--        Disable Forced Dark-Mode-->
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+
+
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" >@color/statusbar_colors</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+        <!-- Customize your theme here. -->
+        <item name="bottomSheetDialogTheme">@style/ThemeOverlay.PhotoEditor.BottomSheetDialog</item>
+
+        <item name="sliderStyle">@style/Widget.App.Slider</item>
+
+        <item name="android:windowActivityTransitions">true</item>
+
+
+    </style>
+
+    <!-- for BottomSheet    -->
+
+    <!--    style for bottomSheet (Basically )-->
+    <style name="Widget.PhotoEditor.BottomSheet" parent="Widget.MaterialComponents.BottomSheet" />
+
+    <style name="ThemeOverlay.PhotoEditor.BottomSheetDialog" parent="@style/ThemeOverlay.MaterialComponents.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/bottomSheetModal</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">?colorSurface</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:backgroundDimAmount">0</item>
+
+    </style>
+
+    <style name="bottomSheet" parent="Widget.PhotoEditor.BottomSheet">
+        <item name="bottomSheetStyle">@style/bottomSheetModal</item>
+    </style>
+    <!--Background Color for BottomSheet-->
+    <style name="bottomSheetModal" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@color/primaryColorForDark</item>
+    </style>
+
+    <!--    Slider -->
+
+    <style name="Widget.App.Slider" parent="Widget.MaterialComponents.Slider">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.Slider</item>
+        <item name="labelStyle">@style/Widget.App.Tooltip</item>
+    </style>
+
+    <style name="ThemeOverlay.App.Slider" parent="">
+        <item name="colorPrimary">@color/sliderButtonColor_dark</item>
+        <item name="colorOnPrimary">@color/sliderLebelTextColor_dark</item>
+        <item name="colorOnSurface">@color/sliderButtonColor_dark</item>
+    </style>
+
+    <style name="Widget.App.Tooltip" parent="Widget.MaterialComponents.Tooltip">
+        <item name="android:textAppearance">@style/TextAppearance.App.Tooltip</item>
+        <item name="backgroundTint">@color/sliderLebelTextColor_dark</item>
+    </style>
+
+    <style name="TextAppearance.App.Tooltip" parent="TextAppearance.MaterialComponents.Tooltip">
+        <item name="android:textColor">@color/sliderButtonColor_dark</item>
+    </style>
+
+    <!--    StickerItem Background-->
+
+    <style name="sticker_item_background_style">
+        <item name="android:background">@drawable/sticker_item_background_dark</item>
+    </style>
+
+
+    <!--    TabItem Text Style -->
+    <style name="sticker_item_background_tabItemStyle" parent="Base.Widget.Design.TabLayout">
+        <item name="android:textSize">13sp</item>
+        <item name="textAllCaps">true</item>
+    </style>
+
+    <!--     collage Tab Item Style-->
+    <style name="collage_item_background_tabItemStyle" parent="sticker_item_background_tabItemStyle">
+        <item name="android:textSize">11sp</item>
+    </style>
+
+
+    <!--    TextStickerItem Background(ViewPager)-->
+
+    <style name="text_sticker_viewpager_item_background">
+        <item name="android:background">@drawable/background_of_text_sticker_item_dark</item>
+    </style>
+
+
+    <!--    recent photo recycler-view item background-->
+    <style name="recent_photo_item">
+        <item name="backgroundTint">#494848</item>
+    </style>
+
+
+    <!--    paint Tab-Layout style (Dark) -->
+    <style name="paint_tab_layout_style" parent="Widget.MaterialComponents.TabLayout">
+        <item name="android:textSize">14sp</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:backgroundTint">@color/paint_layout_backcolor_dark</item>
+        <item name="tabIndicatorColor">@color/paint_layout_item_backcolor_dark</item>
+
+        <item name="tabTextColor">@color/primaryColor</item>
+
+        <item name="tabTextAppearance">@style/paint_tabItemStyle</item>
+
+        <item name="tabIndicator">@drawable/paint_tablayout_item_selector</item>
+    </style>
+
+
+</resources>

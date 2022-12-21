@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="clickListener"
+            type="com.android.demoeditor.recyclerViews.FontTextStickerListener" />
+
+        <variable
+            name="fontItemData"
+            type="com.android.demoeditor.data.FontItemData" />
+
+        <variable
+            name="position"
+            type="Integer" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="65dp"
+        android:layout_height="70dp"
+        android:layout_margin="4dp"
+        android:onClick="@{()-> clickListener.onClick(fontItemData,position)}" >
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/fontCardView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        app:cardCornerRadius="@dimen/text_sticker_round_corner_value"
+
+        app:strokeWidth="1dp"
+        app:strokeColor="@color/font_item_selector_color"
+
+        android:backgroundTint="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:padding="8dp"
+            android:textColor="?attr/colorOnPrimary"
+            style="@style/text_sticker_viewpager_item_background"
+            app:setTypeFaceFromXml="@{fontItemData.font}"
+            android:gravity="center"
+            android:text="@string/font_item_text"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            />
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="@{fontItemData.name}"
+            android:textAlignment="center"
+            android:textSize="10sp"
+            android:padding="2dp"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fontCardView"
+            tools:text="Roboto" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

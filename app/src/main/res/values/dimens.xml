@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <dimen name="editor_nav_item_speace">32dp</dimen>
+    <dimen name="editor_nav_item_text_size">12sp</dimen>
+    <dimen name="editor_nav_item_text_top_margin">8dp</dimen>
+    <dimen name="tool_bar_icon_margin">16dp</dimen>
+    <dimen name="tool_bar_text_margin">24dp</dimen>
+    <dimen name="paint_toolbar_text_size">18sp</dimen>
+    <dimen name="spaceForPaintFragment_16dp">16dp</dimen>
+
+    <dimen name="bottomSheet_margin_16">16dp</dimen>
+    <dimen name="bottomSheet_margin_8">8dp</dimen>
+    <dimen name="bottomSheetCustom_margin_cross_tick">32dp</dimen>
+    <dimen name="bottomSheet_margin_24">24dp</dimen>
+    <dimen name="bottomSheet_margin_4">4dp</dimen>
+
+
+    <dimen name="paint_fragment_margin_16">16dp</dimen>
+    <dimen name="paint_fragment_margin_4">4dp</dimen>
+    <dimen name="paint_fragment_margin_8">8dp</dimen>
+    <dimen name="paint_fragment_margin_24">24dp</dimen>
+    <dimen name="paint_fragment_margin_32">32dp</dimen>
+
+    <!-- sheet corner value-->
+
+    <dimen name="sheetCornerValue">16dp</dimen>
+    <dimen name="bottomSheet_margin_32">32dp</dimen>
+
+    <!--    filter corner radius value-->
+    <dimen name="filter_corner_radius_value">6dp</dimen>
+    <!--    Adjust fragment-->
+    <dimen name="grid_expected_size">100dp</dimen>
+    <dimen name="adjust_fragment_4">4dp</dimen>
+    <dimen name="adjust_fragment_8">8dp</dimen>
+    <dimen name="adjust_fragment_16">16dp</dimen>
+    <dimen name="adjust_fragment_24">24dp</dimen>
+    <dimen name="adjust_fragment_12">12dp</dimen>
+    <dimen name="adjust_fragment_32">32dp</dimen>
+    <dimen name="adjust_fragment_64">64dp</dimen>
+
+
+    <!--    Filter fragment-->
+    <dimen name="paint_tablayout_tab_radius">6dp</dimen>
+    <dimen name="adjust_bottom_nav_icon_height_width">24dp</dimen>
+
+    <!--    This is Only for Bottom-Navigation-Bar-->
+
+    <dimen name="design_bottom_navigation_height" tools:override="true">61dp</dimen>
+    <dimen name="design_bottom_navigation_text_size" tools:override="true">12sp</dimen>
+
+    <!--    End of Bottom-Navigation-Bar-->
+
+
+<!--    RulerView-->
+    <dimen name="ucrop_width_middle_wheel_progress_line">4dp</dimen>
+    <dimen name="ucrop_width_horizontal_wheel_progress_line">2dp</dimen>
+    <dimen name="ucrop_height_horizontal_wheel_progress_line">25dp</dimen>
+    <dimen name="ucrop_margin_horizontal_wheel_progress_line">10dp</dimen>
+    <!---->
+
+<!--    text sticker round corner-->
+    <dimen name="text_sticker_round_corner_value">4dp</dimen>
+    <dimen name="edit_text_dialog_inputText_radius">5dp</dimen>
+
+
+
+
+
+    <!--uCrop Activity-->
+    <dimen name="ucrop_padding_crop_frame">16dp</dimen>
+    <dimen name="ucrop_size_dot_scale_text_view">8dp</dimen>
+
+    <dimen name="ucrop_height_wrapper_controls">64dp</dimen>
+    <dimen name="ucrop_height_wrapper_states">72dp</dimen>
+    <dimen name="ucrop_height_divider_shadow">3dp</dimen>
+    <dimen name="ucrop_text_size_widget_text">13sp</dimen>
+    <dimen name="ucrop_text_size_controls_text">11sp</dimen>
+    <dimen name="ucrop_margin_top_widget_text">10dp</dimen>
+    <dimen name="ucrop_margin_top_controls_text">4dp</dimen>
+    <dimen name="ucrop_size_wrapper_rotate_button">50dp</dimen>
+    <dimen name="ucrop_height_crop_aspect_ratio_text">40dp</dimen>
+    <dimen name="ucrop_progress_size">30dp</dimen>
+
+    <!--Crop View-->
+    <dimen name="ucrop_default_crop_logo_size">200dp</dimen>
+    <dimen name="ucrop_default_crop_grid_stoke_width">1dp</dimen>
+    <dimen name="ucrop_default_crop_frame_stoke_width">1dp</dimen>
+    <dimen name="ucrop_default_crop_rect_corner_touch_threshold">30dp</dimen>
+    <dimen name="ucrop_default_crop_rect_min_size">100dp</dimen>
+    <dimen name="ucrop_default_crop_rect_corner_touch_area_line_length">10dp</dimen>
+    <dimen name="btn_size_collage_edit_view_pager">40dp</dimen>
+
+
+
+
+
+
+    <dimen name="home_icon_show_recycler_view_height">140dp</dimen>
+    <dimen name="card_padding_in_home_page">10dp</dimen>
+    <dimen name="card_corner_in_home_page">3dp</dimen>
+    <dimen name="dp_4">4dp</dimen>
+
+
+    <dimen name="home_card_view_corner_radius">1dp</dimen>
+    <dimen name="developer_details_for_all_corner_radius">12dp</dimen>
+</resources>

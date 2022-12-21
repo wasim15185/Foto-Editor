@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.android.demoeditor.viewModel.FiltersViewModel" />
+
+        <import type="android.view.View" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".screens.FiltersFragment">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appBarLayout_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/toolbar"
+                style="@style/CustomToolBar"
+                app:menu="@menu/common_tick_menu"
+                app:navigationIcon="@drawable/ic_back_arrow_24"
+                app:title="Filter"
+                app:titleCentered="true"
+                app:titleTextAppearance="@style/text_appearance_material_toolbar_title" />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <!--        image - container-->
+
+        <FrameLayout
+            android:id="@+id/filter_image_container"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:visibility="@{viewModel.isImgLoading ? View.GONE : View.VISIBLE}"
+            app:layout_constraintBottom_toTopOf="@+id/list_of_filters_container"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/appBarLayout_id">
+
+
+            <ImageView
+                android:id="@+id/img_id"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="8dp"
+                android:scaleType="fitCenter"
+                android:transitionName="@string/img_transition_unique_name"
+
+                tools:src="@drawable/suv" />
+
+        </FrameLayout>
+
+
+        <com.mmdev.loadingviewlib.LoadingView
+            android:id="@+id/img_loading"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:visibility="@{viewModel.isImgLoading ? View.VISIBLE : View.GONE}"
+            app:loadStrokeWidth="6dp"
+            app:layout_constraintBottom_toTopOf="@+id/list_of_filters_container"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/appBarLayout_id"
+            />
+
+
+
+        <!--        navbar container-->
+
+        <FrameLayout
+            android:id="@+id/list_of_filters_container"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <com.mmdev.loadingviewlib.LoadingView
+                android:id="@+id/loadingView"
+                android:layout_height="50dp"
+                android:layout_width="50dp"
+                android:visibility="@{viewModel.isImgLoading ? View.VISIBLE : View.GONE}"
+                android:layout_gravity="center"
+                app:loadStrokeColor="?attr/colorSecondary"
+                app:loadStrokeWidth="6dp"
+                tools:visibility="gone"
+                />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/filter_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:visibility="@{viewModel.isImgLoading ? View.GONE : View.VISIBLE}"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/filters_navbar_item"
+                tools:visibility="visible" />
+        </FrameLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

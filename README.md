@@ -29,8 +29,8 @@ similar app is live in Play Store Name <b>Pikify</b> .
 
 ### Preview 
  
-<div style="height:200px ; width:200px"> 
- https://user-images.githubusercontent.com/63144434/209192815-f8c055ec-cb49-4698-b53d-ad1fdea71062.mp4
+<div style="height:200px ; width:200px">
+https://user-images.githubusercontent.com/63144434/209192815-f8c055ec-cb49-4698-b53d-ad1fdea71062.mp4
 </div>
 
 

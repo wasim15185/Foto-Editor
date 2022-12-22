@@ -24,8 +24,8 @@ similar app is live in Play Store Name <b>Pikify</b> .
 | <img height="400" width="200" src="https://i.imgur.com/AsBes26.jpg" title="source: imgur.com" /> | <img height="400" width="200" src="https://i.imgur.com/qJDPKDV.jpg" title="source: imgur.com" /> | <img height="400" width="200" src="https://i.imgur.com/7k4T3yT.jpg" title="source: imgur.com" /> |
 | **Paint Screen**                                                                                 | **Sticker Screen**                                                                               | **Filter Screen**                                                                                |
 | <img height="400" width="200" src="https://i.imgur.com/SywPduG.jpg" title="source: imgur.com" /> | <img height="400" width="200" src="https://i.imgur.com/azYfSg5.jpg" title="source: imgur.com" /> | <img height="400" width="200" src="https://i.imgur.com/wVhKzg5.jpg" title="source: imgur.com" /> |
-
-
+| **Collage Screen**                                                                               |
+| <img height="400" width="200" src="https://i.imgur.com/UDYg2vf.jpg" title="source: imgur.com" /> |
 
 
 

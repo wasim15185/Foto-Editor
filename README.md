@@ -28,8 +28,7 @@ similar app is live in Play Store Name <b>Pikify</b> .
 | <img height="400" width="200" src="https://i.imgur.com/UDYg2vf.jpg" title="source: imgur.com" /> |
 
 ### Preview 
-<iframe src="https://player.vimeo.com/video/783323706?h=366824a2ec" width="640" height="1331" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-<p><a href="https://vimeo.com/783323706">Foto Editor</a> from <a href="https://vimeo.com/user168642243">Wasim Akram Biswas</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+https://vimeo.com/783323706
 
 
 ### License

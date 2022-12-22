@@ -17,12 +17,13 @@ similar app is live in Play Store Name <b>Pikify</b> .
 
 ### Sample
 
-| Splash Screen                                                                                    | Home Screen                                                           | Crop Screen                                                           |
-|--------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------|-----------------------------------------------------------------------|
-| <img height="400" width="200" src="https://i.imgur.com/g6p25nB.jpg"/>                            | <img height="400" width="200" src="https://i.imgur.com/0L5vKLu.jpg"/> | <img height="400" width="200" src="https://i.imgur.com/zR46eZI.jpg"/> |
-| Rotate Screen                                                                                    |                                                                       |                                                                       |
-| <img height="400" width="200" src="https://i.imgur.com/AsBes26.jpg" title="source: imgur.com" /> |                                                                       |                                                                       |
-
+| Splash Screen                                                                                    | Home Screen                                                                                      | Crop Screen                                                                                      |
+|--------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
+| <img height="400" width="200" src="https://i.imgur.com/g6p25nB.jpg"/>                            | <img height="400" width="200" src="https://i.imgur.com/0L5vKLu.jpg"/>                            | <img height="400" width="200" src="https://i.imgur.com/zR46eZI.jpg"/>                            |
+| **Rotate Screen**                                                                                | **Adjust Screen**                                                                                | **Text Sticker**                                                                                 |
+| <img height="400" width="200" src="https://i.imgur.com/AsBes26.jpg" title="source: imgur.com" /> | <img height="400" width="200" src="https://i.imgur.com/qJDPKDV.jpg" title="source: imgur.com" /> | <img height="400" width="200" src="https://i.imgur.com/7k4T3yT.jpg" title="source: imgur.com" /> |
+| **Paint Screen**                                                                                 | **Sticker Screen**                                                                               | **Filter Screen**                                                                                |
+| <img height="400" width="200" src="https://i.imgur.com/SywPduG.jpg" title="source: imgur.com" /> | <img height="400" width="200" src="https://i.imgur.com/azYfSg5.jpg" title="source: imgur.com" /> | <img height="400" width="200" src="https://i.imgur.com/wVhKzg5.jpg" title="source: imgur.com" /> |
 
 
 

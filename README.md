@@ -19,7 +19,7 @@ similar app is live in Play Store Name <b>Pikify</b> .
 
 | Splash Screen                                                         | Home Screen                                                           |
 |-----------------------------------------------------------------------|-----------------------------------------------------------------------|
-| <img height="450" width="250" src="https://i.imgur.com/g6p25nB.jpg"/> | <img height="450" width="250" src="https://i.imgur.com/0L5vKLu.jpg"/> |
+| <img height="400" width="200" src="https://i.imgur.com/g6p25nB.jpg"/> | <img height="400" width="200" src="https://i.imgur.com/0L5vKLu.jpg"/> |
 |                                                                       |                                                                       |
 
 ### License

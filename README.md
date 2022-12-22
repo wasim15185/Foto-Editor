@@ -17,7 +17,7 @@ similar app is live in Play Store Name <b>Pikify</b> .
 
 ### Sample
 
-| Splash Screen                                                                                    | Home Screen                                                                                      | Crop Screen                                                                                      |
+| Splash Screen                                                                                    | Home Screen                                                                                      | Crop Screen                                                                                      |  
 |--------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
 | <img height="400" width="200" src="https://i.imgur.com/g6p25nB.jpg"/>                            | <img height="400" width="200" src="https://i.imgur.com/0L5vKLu.jpg"/>                            | <img height="400" width="200" src="https://i.imgur.com/zR46eZI.jpg"/>                            |
 | **Rotate Screen**                                                                                | **Adjust Screen**                                                                                | **Text Sticker**                                                                                 |
@@ -27,7 +27,8 @@ similar app is live in Play Store Name <b>Pikify</b> .
 | **Collage Screen**                                                                               |
 | <img height="400" width="200" src="https://i.imgur.com/UDYg2vf.jpg" title="source: imgur.com" /> |
 
-
+### Preview 
+<video src='https://vimeo.com/783323706' width="180" />
 
 
 

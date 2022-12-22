@@ -17,10 +17,10 @@ similar app is live in Play Store Name <b>Pikify</b> .
 
 ### Sample
 
-| Splash Screen                                    | Home Screen                                    |
-|--------------------------------------------------|------------------------------------------------|
-| [Splash Screen](https://i.imgur.com/g6p25nB.jpg) | [Home Screen](https://i.imgur.com/0L5vKLu.jpg) |
-|                                                  |                                                |
+| Splash Screen                                                         | Home Screen                                                           |
+|-----------------------------------------------------------------------|-----------------------------------------------------------------------|
+| <img height="350" width="250" src="https://i.imgur.com/g6p25nB.jpg"/> | <img height="350" width="250" src="https://i.imgur.com/0L5vKLu.jpg"/> |
+|                                                                       |                                                                       |
 
 ### License
 

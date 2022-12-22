@@ -28,13 +28,15 @@ similar app is live in Play Store Name <b>Pikify</b> .
 | <img height="400" width="200" src="https://i.imgur.com/UDYg2vf.jpg" title="source: imgur.com" /> |
 
 
-<div align="start" style="height: 130px ; width: 130px ">
-
 ### Preview 
 https://user-images.githubusercontent.com/63144434/209192815-f8c055ec-cb49-4698-b53d-ad1fdea71062.mp4
 
-</div>
 
+## Buy me a Coffee
+
+If u wish buy me a coffee .
+
+<a href="https://www.buymeacoffee.com/wasimakram15185"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=wasimakram15185&button_colour=FF5F5F&font_colour=ffffff&font_family=Cookie&outline_colour=000000&coffee_colour=FFDD00" /></a>
 
 
 ### License

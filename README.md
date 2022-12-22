@@ -1,21 +1,26 @@
-# Foto Editor 
+# Foto Editor
 
-Foto Editor is Photo-Editor Android App which is build in Kotlin , Java , C99 (Renderscript) .
+Foto Editor is Photo-Editor Android App which is build in Kotlin , Java , C99 (Renderscript) . It's
+similar app is live in Play Store Name <b>Pikify</b> .
 
 ## Features
-- Crop
-- Rotate
-- Adjust
-- Brush
-- Filter
-- Text-Sticker
-- Sticker
-- Collage
 
+- Crop : We can crop Image using this application
+- Rotate : We can Rotate Image using this application
+- Adjust : We can Adjust Image using this application. We can control **Brightness** , **Contrast**
+  , **Saturation** , **Sharpen** , **Vignette**
+- Brush : Brush is for drawing in image
+- Filter : We can use multiple filter on image
+- Text-Sticker : Using text-sticker we can create text-sticker on Image
+- Sticker : Using sticker we can create sticker on Image
+- Collage : We can create collage of image
 
+### Sample
 
-
-
+| Splash Screen                                    | Home Screen                                    |
+|--------------------------------------------------|------------------------------------------------|
+| [Splash Screen](https://i.imgur.com/g6p25nB.jpg) | [Home Screen](https://i.imgur.com/0L5vKLu.jpg) |
+|                                                  |                                                |
 
 ### License
 

@@ -15,6 +15,12 @@ similar app is live in Play Store Name <b>Pikify</b> .
 - Sticker : Using sticker we can create sticker on Image
 - Collage : We can create collage of image
 
+## Buy me a Coffee
+
+If u wish buy me a coffee .
+
+<a href="https://www.buymeacoffee.com/wasimakram15185"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=wasimakram15185&button_colour=FF5F5F&font_colour=ffffff&font_family=Cookie&outline_colour=000000&coffee_colour=FFDD00" /></a>
+
 ### Sample
 
 | Splash Screen                                                                                    | Home Screen                                                                                      | Crop Screen                                                                                      |  
@@ -31,14 +37,7 @@ similar app is live in Play Store Name <b>Pikify</b> .
 ### Preview 
 https://user-images.githubusercontent.com/63144434/209192815-f8c055ec-cb49-4698-b53d-ad1fdea71062.mp4
 
-
-## Buy me a Coffee
-
-If u wish buy me a coffee .
-
-<a href="https://www.buymeacoffee.com/wasimakram15185"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=wasimakram15185&button_colour=FF5F5F&font_colour=ffffff&font_family=Cookie&outline_colour=000000&coffee_colour=FFDD00" /></a>
-
-
+ 
 ### License
 
 ```

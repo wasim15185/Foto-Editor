@@ -3,6 +3,9 @@
 Foto Editor is Photo-Editor Android App which is build in Kotlin , Java , C99 (Renderscript) . It's
 similar app is live in Play Store Name <b>Pikify</b> .
 
+### Preview 
+https://user-images.githubusercontent.com/63144434/209192815-f8c055ec-cb49-4698-b53d-ad1fdea71062.mp4
+
 ## Features
 
 - Crop : We can crop Image using this application
@@ -32,10 +35,6 @@ If u wish buy me a coffee .
 | <img height="400" width="200" src="https://i.imgur.com/SywPduG.jpg" title="source: imgur.com" /> | <img height="400" width="200" src="https://i.imgur.com/azYfSg5.jpg" title="source: imgur.com" /> | <img height="400" width="200" src="https://i.imgur.com/wVhKzg5.jpg" title="source: imgur.com" /> |
 | **Collage Screen**                                                                               |
 | <img height="400" width="200" src="https://i.imgur.com/UDYg2vf.jpg" title="source: imgur.com" /> |
-
-
-### Preview 
-https://user-images.githubusercontent.com/63144434/209192815-f8c055ec-cb49-4698-b53d-ad1fdea71062.mp4
 
  
 ### License
